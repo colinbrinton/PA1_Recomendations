@@ -1,0 +1,14 @@
+#ifndef MEMBER_H
+#define MEMBER_H
+#include <string>
+
+class Member
+{
+  string name, account;
+  bool login;
+
+ public:
+  void addMember(string name, string account);
+  void getMember
+
+#endif
