@@ -10,6 +10,8 @@ class Member
   void setLogin();
   
  public:
+  Member();
+  Member(string name, string account);
   void addMember(string name, string account);
   void getMember() const;
   void getLogin() const;
