@@ -2,6 +2,8 @@
 #define BOOK_H
 #include <string>
 
+using namespace std;
+
 class Book
 {
   //Private Data Members
@@ -36,4 +38,30 @@ class Book
   string getAuthor() const;
   
 };
+
+template
+class DArray
+{
+ public:
+  DArray();
+  DArray(int size);
+  DArray(const DArray &rhs);
+  DArray &operator= (cosnt DArray &rhs);
+  ~DArray();
+  recommend &operator[] (int index);
+  void add(const Recommend &obj);
+  int getSize();
+  void setSize(int size);
+  void clear();
+  void remove(int index);
+
+private:
+  Recommend *array;
+  int size;
+  int bitSize;
+
+  const static int INTI_SIZE = 64;
+  const static int SIZE_INCR = 2;
+};
+
 #endif
